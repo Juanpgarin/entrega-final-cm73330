@@ -1,0 +1,71 @@
+@use "variables" as *;
+
+.bannerpublicitario {
+  background-color: rgba(53, 52, 52, 0.5);
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid $secondarycolor;
+  border-radius: 30px;
+  gap: 20px;
+  align-items: center;
+  margin: 40px 20px;
+
+  a {
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      border: 4px solid $secondarycolor;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        border-color: red;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left, black, rgb(44, 41, 41));
+  padding: 20px;
+  color: aliceblue;
+  text-align: center;
+  gap: 20px;
+
+  &__social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.09);
+      filter: brightness(1.1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  transform: scale(1.03);
+  transition: all 0.4s ease;
+    }
+  }
+
+
+  &__text {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: aliceblue;
+  }
+}

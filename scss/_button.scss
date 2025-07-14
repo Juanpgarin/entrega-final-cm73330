@@ -1,0 +1,20 @@
+@use "variables" as *;
+@use "sass:color";
+
+.btn {
+    display: inline-block;
+    background-color: $secondarycolor;
+    color: aliceblue;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.6s ease;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: color.adjust($secondarycolor, $lightness: -20%);
+        box-shadow: 0 0 20px rgba(211, 207, 207, 0.9);
+        color: red;
+    }
+}
