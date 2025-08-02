@@ -116,7 +116,7 @@
   margin: 100px 0 40px 0;
 }
 .preview-gallery-item {
-  width: 300px;
+  width: 150px;
   text-align: center;
 }
 .preview-gallery-item a {
@@ -322,10 +322,13 @@
   gap: 20px;
 }
 .footer__social {
+  margin: 0 auto;
   display: flex;
   gap: 15px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .footer__icon {
   width: 100px;
